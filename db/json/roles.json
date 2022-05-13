@@ -1,1 +1,252 @@
-{}
+[
+  {
+    "_id": "6168bc7afe1a8063238a910f",
+    "guild_id": "883451820498882580",
+    "role_id": "889304376206823524",
+    "name": "Orange",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6168bc9b93807efca9ecead9",
+    "guild_id": "883451820498882580",
+    "role_id": "889304377494483055",
+    "name": "Gold",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "61759084ef62b95aaf2e57ed",
+    "guild_id": "883451820498882580",
+    "role_id": "889305369137004554",
+    "name": "Magenta",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a0997ec12da037f6b78c",
+    "guild_id": "883451820498882580",
+    "role_id": "889304376802418718",
+    "name": "Pale Pink",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a0ad7ec12da037f6b790",
+    "guild_id": "883451820498882580",
+    "role_id": "893216409683890188",
+    "name": "Cyan",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a188d0f921fe5e613465",
+    "guild_id": "883451820498882580",
+    "role_id": "892871064319832065",
+    "name": "Black",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a201aad629ea0554d4b7",
+    "guild_id": "883451820498882580",
+    "role_id": "889305983300538419",
+    "name": "Crimson Red",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a210aad629ea0554d4be",
+    "guild_id": "883451820498882580",
+    "role_id": "889305474627936287",
+    "name": "Lime",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a3321f5b1ce498752b76",
+    "guild_id": "883451820498882580",
+    "role_id": "889305349423763477",
+    "name": "Lavender",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a3b8245e959807d52eeb",
+    "guild_id": "883451820498882580",
+    "role_id": "889305982801436702",
+    "name": "Navy Blue",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a3bd245e959807d52ef2",
+    "guild_id": "883451820498882580",
+    "role_id": "889305982176460870",
+    "name": "Light Blue",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a3c3245e959807d52ef9",
+    "guild_id": "883451820498882580",
+    "role_id": "889304371500839003",
+    "name": "Light Green",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a3db245e959807d52f03",
+    "guild_id": "883451820498882580",
+    "role_id": "889304368531255377",
+    "name": "Yellow",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a3e3245e959807d52f07",
+    "guild_id": "883451820498882580",
+    "role_id": "889304372176109638",
+    "name": "Dark Green",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a3fc245e959807d52f17",
+    "guild_id": "883451820498882580",
+    "role_id": "899862796999745568",
+    "name": "Macah Green",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a401245e959807d52f1b",
+    "guild_id": "883451820498882580",
+    "role_id": "888219803372904478",
+    "name": "Light Blue",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "6175a408245e959807d52f1f",
+    "guild_id": "883451820498882580",
+    "role_id": "889304374281666571",
+    "name": "Gray",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "617625873f93c460a95443fd",
+    "guild_id": "883451820498882580",
+    "role_id": "902036756466118667",
+    "name": "Pink",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "617c9e88b11679b11be49358",
+    "guild_id": "883451820498882580",
+    "role_id": "898316334683795487",
+    "name": "Embed Perms",
+    "price": 22500,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "617c9eceb11679b11be49365",
+    "guild_id": "883451820498882580",
+    "role_id": "902036290420224041",
+    "name": "Bot Log Viewer",
+    "price": 10000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "61c544f2c98c643bb9315fc4",
+    "guild_id": "883451820498882580",
+    "role_id": "923780673997795338",
+    "name": "VC Locker",
+    "price": 100000,
+    "stock": -1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "627bdaeaae44170c98c9214f",
+    "guild_id": "946140401788649532",
+    "role_id": "970481805109100564",
+    "name": "lovers",
+    "price": 1000000,
+    "stock": 1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "627be3f6ae44170c98c9226e",
+    "guild_id": "946140401788649532",
+    "role_id": "973984135234338846",
+    "name": "BigBootyDick NFT",
+    "price": 1,
+    "stock": 1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "627c3979ae44170c98c9279e",
+    "guild_id": "946140401788649532",
+    "role_id": "974075150616100866",
+    "name": "BigBootyBitch NFT",
+    "price": 1,
+    "stock": 1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "627c3cc6ae44170c98c9290d",
+    "guild_id": "946140401788649532",
+    "role_id": "974079788471955487",
+    "name": "COAL NFT",
+    "price": 1,
+    "stock": 5,
+    "multiplier": 1,
+    "__v": 0
+  }
+]
