@@ -30,8 +30,9 @@ module.exports.command = async (message) => {
   let roles = jsonfile.readFileSync(ROLES_JSON_FILE);
   let _role;
   let role;
+  let roleIndex;
   do {
-    let roleIndex = roles.findIndex(
+    roleIndex = roles.findIndex(
       ({ guild_id, name }) =>
         guild_id === guildId && name.toLowerCase() === roleName.toLowerCase()
     );
@@ -43,6 +44,10 @@ module.exports.command = async (message) => {
       return;
     }
     role = roles[roleIndex];
+    if (role.stock !== -1 && role.stock < 1) {
+      utils.sendDelete(message, 'Out of stock.');
+      return;
+    }
     _role = await message.guild.roles
       .fetch(role.role_id)
       .catch((err) => console.log(err));
@@ -60,7 +65,7 @@ module.exports.command = async (message) => {
     .setColor(_role.hexColor)
     .setTitle(`Buy ${_role.name}?`)
     .addField('Price', `💵  ${role.price}`)
-    .addField('Stock', `${role.stock} roles`)
+    .addField('Stock', `${role.stock} role${role.stock > 1 ? 's' : ''}`)
     .addField('Multiplier', `${role.multiplier}x`);
 
   let row = new MessageActionRow().addComponents(yesButton, noButton);
@@ -81,7 +86,7 @@ module.exports.command = async (message) => {
     switch (interaction.customId) {
       case 'yes':
         selectedButton = yesButton;
-        buyRole(message, _role, role.price);
+        buyRole(message, _role, roles, roleIndex);
         break;
       case 'no':
         selectedButton = noButton;
@@ -98,7 +103,9 @@ module.exports.command = async (message) => {
   });
 };
 
-const buyRole = async (message, role, price) => {
+const buyRole = async (message, role, jsonRoles, roleIndex) => {
+  const price = jsonRoles[roleIndex].price;
+  const stock = jsonRoles[roleIndex].stock;
   let user_id = message.author.id;
   let roleManager = message.member.roles;
 
@@ -118,8 +125,27 @@ const buyRole = async (message, role, price) => {
   let success = await utils.takePoints(user_id, price, message.guildId);
 
   if (success) {
-    utils.sendDelete(message, `Successfully bought ${role.name}.`);
-    roleManager.add(role, 'Bought with points');
+    let successfullyAddedRole = true;
+    await roleManager.add(role, 'Bought with points').catch((err) => {
+      successfullyAddedRole = false;
+      console.log(err);
+      utils.sendDelete(message, `ERR: `);
+    });
+    if (successfullyAddedRole) {
+      utils.sendDelete(message, `Successfully bought ${role.name}.`);
+      let _role = await Role.findOne({
+        guild_id: message.guildId,
+        role_id: role.id,
+        price,
+      });
+      console.log(_role);
+      if (_role && stock !== -1) {
+        _role.stock--;
+        _role.save();
+        jsonRoles[roleIndex].stock--;
+        jsonfile.writeFileSync(ROLES_JSON_FILE, jsonRoles, { spaces: 2 });
+      }
+    }
   } else {
     utils.sendDelete(message, `Not enough points.`);
   }

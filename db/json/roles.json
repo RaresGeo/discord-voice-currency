@@ -245,7 +245,27 @@
     "role_id": "974079788471955487",
     "name": "COAL NFT",
     "price": 1,
-    "stock": 5,
+    "stock": 1,
+    "multiplier": 1,
+    "__v": 0
+  },
+  {
+    "_id": "627eb5d1a4bfe5420d645ad5",
+    "guild_id": "646115129712181262",
+    "role_id": "646116018779062333",
+    "name": "The Scribe",
+    "price": 1,
+    "stock": -1,
+    "multiplier": 10,
+    "__v": 0
+  },
+  {
+    "_id": "627eb72ccbdc1de746ad837a",
+    "guild_id": "646115129712181262",
+    "role_id": "647469675306811423",
+    "name": "The Thief",
+    "price": 169,
+    "stock": 0,
     "multiplier": 1,
     "__v": 0
   }

@@ -54,7 +54,7 @@ const removeCommand = (module) => {
   }
 };
 
-client.on('ready', () => {
+client.on('ready', async () => {
   let _cmds = require('fs').readdirSync('./commands');
   for (let i = 0; i < _cmds.length; i++) {
     let cmd = require(`./commands/${_cmds[i]}`);
@@ -68,6 +68,8 @@ client.on('ready', () => {
   }
 
   console.log('Logged in as ' + client.user.tag + ' successfully.');
+  // const guild = await client.guilds.fetch('946140401788649532');
+  // console.log(guild.me.permissions.toArray());
 });
 
 // Handle all commands
