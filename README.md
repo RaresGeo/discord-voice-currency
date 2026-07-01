@@ -56,7 +56,7 @@ Admin users (see below) can use commands in any channel.
 
 | Command | Aliases | Description |
 | --- | --- | --- |
-| `roulete <bid>` | `roulette`, `roullette`, `roullete` | Roulette. Post a bid, then everyone reacts to bet on a colour (🟢/🔴/⚫) or odd/even (1️⃣/2️⃣). Green pays 16×, colours and odd/even pay 1×. Resolves after 10 seconds. |
+| `roulete <bid>` | `roulette`, `roullette`, `roullete` | Roulette. Post a bid, then everyone reacts to bet on a colour (🟢/🔴/⚫) or odd/even (1️⃣/2️⃣). Green pays 16×, colours and odd/even pay 2×. Resolves after 10 seconds. |
 | `rps <bid>` | | Rock–paper–scissors against the bot. Win to double your bid, lose it on a loss, draw returns it. |
 
 ### Voice pranks
