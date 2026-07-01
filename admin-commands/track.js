@@ -10,6 +10,7 @@ module.exports = {
     event: "voiceStateUpdate",
 };
 
+// TODO: DANIEL: Either add untrack or remove this comment.
 const alreadyIsTracked = `This server is already being tracked, run \`${config.prefix}untrack\` to untrack.`;
 
 module.exports.func = async (oldState, newState) => {
