@@ -35,7 +35,7 @@ module.exports.command = async (message) => {
     if (!role_id) {
       if (m.content.length == 18) {
         // Looks like it's good format, now try to find it in the cache
-        role = await message.guild.roles.fetch(m.content).catch((err) => console.log(err));
+        role = await message.guild.roles.fetch(m.content).catch((err) => console.error(err));
 
         if (!role) {
           // failed, try again
@@ -147,7 +147,7 @@ module.exports.command = async (message) => {
         sendDelete(message, `Updating role...`);
       }
 
-      await _role.save().catch((err) => console.log(err));
+      await _role.save().catch((err) => console.error(err));
       sendDelete(message, `Finished operation.`);
       // This here pulls all roles instead of appending the one that we just added, really inefficient but I'm lazy and this command won't be used often.
       const rolesFile = "./db/json/roles.json";
